@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentinel Pole Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>🚨 Sentinel Pole Dashboard</h1>
+        <p>Smart Public Emergency Response System</p>
+
+        <p id="clock"></p>
+    </div>
+
+    <div class="cards">
+
+    <div class="card">
+        <h2>🏗 Total Poles</h2>
+        <p id="totalPoles">25</p>
+    </div>
+
+    <div class="card">
+        <h2>🟢 Online</h2>
+        <p id="onlinePoles">24</p>
+    </div>
+
+    <div class="card">
+        <h2>🚨 Active Alerts</h2>
+        <p id="activeAlerts">2</p>
+    </div>
+
+    <div class="card">
+        <h2>⚡ System Health</h2>
+        <p id="systemHealth">96%</p>
+    </div>
+
+    </div>
+
+    <!-- <div class="section">
+        <h2>🗺 Live Map</h2>
+    </div> -->
+
+    <div class="section">
+
+        <h2>🚨 Active Incidents</h2>
+
+        <div class="incident-container">
+
+            <div class="incident-list" id="incidentList">
+
+            </div>
+
+            <div class="incident-details">
+
+                <h3 id="incidentTitle">
+                    🚨 Critical Emergency
+                </h3>
+
+                <p><strong>Incident ID:</strong>
+                    <span id="incidentID">INC-001</span>
+                </p>
+
+                <p><strong>Pole:</strong>
+                    <span id="poleID">SP-001</span>
+                </p>
+
+                <p><strong>Status:</strong>
+                    <span id="incidentStatus"
+                        class="status-critical">
+                        CRITICAL
+                    </span>
+                </p>
+
+                <div class="image-box">
+                    📷 Image Preview
+                </div>
+
+                <div class="buttons">
+
+                    <button class="view-btn">
+                        View Image
+                    </button>
+
+                    <button class="ack-btn" onclick="acknowledgeIncident()">
+                        Acknowledge
+                    </button>
+
+                    <button class="resolve-btn" onclick="resolveIncident()">
+                        Resolve
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="section">
+
+        <h2>🧪 Simulation Controls</h2>
+
+        <div class="simulation-buttons">
+
+            <!-- <button class="emergency-btn"
+                onclick="simulateEmergency()">
+
+                🚨 Simulate Emergency
+
+            </button> -->
+
+            <button class="simulate-btn"
+                onclick="simulatePoleFailure()">
+
+                ⚠ Simulate Pole Failure
+
+            </button>
+
+            <button class="restore-btn"
+                onclick="restorePole()">
+
+                ✅ Restore Pole
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="section">
+
+        <h2>🛠 Pole Health Monitor</h2>
+
+        <table class="health-table">
+
+            <thead>
+                <tr>
+                    <th>Pole ID</th>
+                    <th>Status</th>
+                    <th>Battery</th>
+                    <th>Internet</th>
+                    <th>Last Seen</th>
+                </tr>
+            </thead>
+
+            <tbody id="poleTableBody">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <div class="section">
+        <h2>📜 Incident History</h2>
+        <div id="historyList"></div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/12.2.1/firebase-app-compat.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/12.2.1/firebase-database-compat.js"></script>
+
+    <script src="firebase.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

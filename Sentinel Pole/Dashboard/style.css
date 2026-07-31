@@ -1,0 +1,350 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#111827;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.header{
+
+    text-align:center;
+    padding:25px;
+
+}
+
+.header h1{
+
+    color:#00E5FF;
+
+}
+
+.header p{
+
+    color:#cfcfcf;
+    margin-top:10px;
+
+}
+
+.cards{
+
+    display:flex;
+    justify-content:space-around;
+    margin:20px;
+    gap:20px;
+
+}
+
+.card{
+
+     flex:1;
+    background:#1F2937;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+
+    transition:0.3s;
+
+    border:1px solid #374151;
+
+}
+
+.card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 0 20px rgba(0,229,255,0.3);
+
+}
+
+.card h2{
+
+    font-size:18px;
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    font-size:32px;
+    color:#00E5FF;
+    font-weight:bold;
+
+}
+
+.section{
+
+    background:#1F2937;
+    margin:20px;
+    padding:20px;
+    border-radius:12px;
+    min-height:150px;
+
+}
+
+.section h2{
+
+    margin-bottom:15px;
+    color:#00E5FF;
+
+}
+
+.health-table{
+
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+
+}
+
+.health-table th{
+
+    background:#374151;
+    padding:15px;
+
+}
+
+.health-table td{
+
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #374151;
+
+}
+
+.health-table tr:hover{
+
+    background:#263548;
+
+}
+
+.online{
+
+    color:#4ADE80;
+    font-weight:bold;
+
+}
+
+.offline{
+
+    color:#F87171;
+    font-weight:bold;
+
+}
+
+.incident-card{
+
+    background:#111827;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    margin-top:20px;
+
+}
+
+.incident-card h3{
+
+    color:#ff4d4d;
+
+    margin-bottom:15px;
+
+}
+
+.image-box{
+
+    margin-top:15px;
+
+    margin-bottom:20px;
+
+    height:180px;
+
+    background:#2d3748;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:10px;
+
+}
+
+.buttons{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.buttons button{
+
+    flex:1;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+}
+
+.view-btn{
+
+    background:#3b82f6;
+
+    color:white;
+
+}
+
+.ack-btn{
+
+    background:#f59e0b;
+
+}
+
+.resolve-btn{
+
+    background:#22c55e;
+
+}
+
+.status-critical{
+
+    color:#ff4d4d;
+
+    font-weight:bold;
+
+}
+
+.incident-container{
+
+    display:flex;
+    gap:20px;
+
+}
+
+.incident-list{
+
+    width:30%;
+
+}
+
+.incident-details{
+
+    width:70%;
+
+}
+
+.incident-item{
+
+    background:#2d3748;
+
+    padding:15px;
+
+    margin-bottom:10px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+.incident-item:hover{
+
+    background:#374151;
+
+}
+
+.active{
+
+    border-left:5px solid #00E5FF;
+
+}
+
+.simulate-btn{
+
+    padding:15px 25px;
+
+    background:#ef4444;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+}
+
+.simulate-btn:hover{
+
+    opacity:0.9;
+
+}
+
+.simulation-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.emergency-btn{
+
+    background:#dc2626;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 25px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+}
+
+.restore-btn{
+
+    background:#16a34a;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 25px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+}
